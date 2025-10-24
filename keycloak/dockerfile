@@ -1,8 +1,5 @@
 FROM quay.io/keycloak/keycloak:26.4.2
 COPY scim-for-keycloak-kc-26.4-3.6.0-free.jar /opt/keycloak/providers/
 
-ENV KC_SPI_THEME_WELCOME_THEME=scim \
-    KC_SPI_REALM_RESTAPI_EXTENSION_SCIM_LICENSE_KEY=eyJhbGciOiJFUzUxMiJ9.eyJpc3MiOiJwYXNjYWwga251ZXBwZWwiLCJzdWIiOiIxNjI2IiwiYXVkIjoiMTYyNiIsImV4cCI6MTc2MjQ3MzYwMH0.AZyTtX5z0RXDiMJ9WLmV492tECxYMstk84EG1EeXa24Mv-Hvfg51Qv207W0Fg8qU7sceRIZz4U7FZWzMm7-amBKbAeZnnk8_5az3jpE8Ds9rLZOoJ55GYcN6hlb4tNOV2CbLJygB6IQCROpE-wXbrFRGfW0nuGVBZI5jYPKxXbyWkETO
-
 
 RUN /opt/keycloak/bin/kc.sh build
